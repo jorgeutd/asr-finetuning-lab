@@ -1,0 +1,7 @@
+model: openai/whisper-tiny
+language: es
+method: lora
+max_steps: 300
+learning_rate: 0.001
+batch_size: 2
+gradient_accumulation_steps: 8
