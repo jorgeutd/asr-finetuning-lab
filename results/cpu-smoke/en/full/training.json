@@ -1,0 +1,15 @@
+{
+  "method": "full",
+  "language": "en",
+  "steps": 12,
+  "train_rows": 8,
+  "validation_rows": 2,
+  "trainable_parameters": 37184640,
+  "total_parameters": 37760640,
+  "elapsed_seconds": 17.89668140001595,
+  "training_loss": 1.9002241293589275,
+  "best_validation_wer": 0.1875,
+  "peak_cuda_allocated_bytes": null,
+  "device": "cpu",
+  "test_used_for_selection": false
+}

@@ -1,0 +1,21 @@
+{
+  "recipe": {
+    "model": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "language": "es",
+    "method": "full",
+    "seed": 42,
+    "max_steps": 12,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 1,
+    "learning_rate": 1e-05,
+    "warmup_ratio": 0.1,
+    "eval_steps": 6,
+    "max_label_tokens": 225,
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "gradient_checkpointing": false
+  },
+  "manifest_sha256": "7de8b0c2371d0f8eee6fe0fd67bfb1b5ee27604bf3cb777d5cc62c597c9491cf"
+}

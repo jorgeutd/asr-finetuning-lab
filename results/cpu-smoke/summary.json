@@ -1,0 +1,98 @@
+{
+  "purpose": "End-to-end execution check, not a model-quality benchmark.",
+  "training_steps": 12,
+  "train_clips_per_language": 8,
+  "validation_clips_per_language": 2,
+  "test_clips_per_language": 6,
+  "cpu_threads": 4,
+  "comparisons": [
+    {
+      "language": "en",
+      "n": 6,
+      "baseline_wer": 0.12096774193548387,
+      "candidate_wer": 0.1532258064516129,
+      "wer_delta": 0.03225806451612903,
+      "wer_delta_ci95": [
+        0.0,
+        0.06837606837606838
+      ],
+      "baseline_cer": 0.0465444287729196,
+      "candidate_cer": 0.05782792665726375,
+      "cer_delta": 0.01128349788434415,
+      "cer_delta_ci95": [
+        0.0,
+        0.027278982485404498
+      ],
+      "decision": "inconclusive",
+      "bootstrap": "1000 paired group resamples, seed 42; speaker, else text ID, else clip",
+      "scope": "Selected clips only; one training seed. This is not a generalization claim.",
+      "method": "lora"
+    },
+    {
+      "language": "en",
+      "n": 6,
+      "baseline_wer": 0.12096774193548387,
+      "candidate_wer": 0.11290322580645161,
+      "wer_delta": -0.008064516129032265,
+      "wer_delta_ci95": [
+        -0.02,
+        0.0
+      ],
+      "baseline_cer": 0.0465444287729196,
+      "candidate_cer": 0.039492242595204514,
+      "cer_delta": -0.007052186177715088,
+      "cer_delta_ci95": [
+        -0.01781525641061851,
+        0.0
+      ],
+      "decision": "inconclusive",
+      "bootstrap": "1000 paired group resamples, seed 42; speaker, else text ID, else clip",
+      "scope": "Selected clips only; one training seed. This is not a generalization claim.",
+      "method": "full"
+    },
+    {
+      "language": "es",
+      "n": 6,
+      "baseline_wer": 0.18181818181818182,
+      "candidate_wer": 0.16883116883116883,
+      "wer_delta": -0.012987012987012991,
+      "wer_delta_ci95": [
+        -0.02926829268292683,
+        0.0
+      ],
+      "baseline_cer": 0.06070640176600441,
+      "candidate_cer": 0.06070640176600441,
+      "cer_delta": 0.0,
+      "cer_delta_ci95": [
+        -0.0033259423503325942,
+        0.003911342894393742
+      ],
+      "decision": "inconclusive",
+      "bootstrap": "1000 paired group resamples, seed 42; speaker, else text ID, else clip",
+      "scope": "Selected clips only; one training seed. This is not a generalization claim.",
+      "method": "lora"
+    },
+    {
+      "language": "es",
+      "n": 6,
+      "baseline_wer": 0.18181818181818182,
+      "candidate_wer": 0.18181818181818182,
+      "wer_delta": 0.0,
+      "wer_delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_cer": 0.06070640176600441,
+      "candidate_cer": 0.06291390728476821,
+      "cer_delta": 0.0022075055187638012,
+      "cer_delta_ci95": [
+        0.0,
+        0.005215123859191656
+      ],
+      "decision": "inconclusive",
+      "bootstrap": "1000 paired group resamples, seed 42; speaker, else text ID, else clip",
+      "scope": "Selected clips only; one training seed. This is not a generalization claim.",
+      "method": "full"
+    }
+  ]
+}
