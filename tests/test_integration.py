@@ -48,4 +48,5 @@ def test_pretrained_training_selects_and_reloads_checkpoint(tmp_path, method):
     model_id = recipe.model if method == "lora" else str(output / "model")
     adapter = str(output / "model") if method == "lora" else None
     model, processor = load_model(model_id, "en", adapter=adapter)
+    assert model.generation_config.suppress_tokens
     assert isinstance(transcribe(model, processor, str(tmp_path / "validation.wav"), "en", 32), str)

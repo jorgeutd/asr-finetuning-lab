@@ -37,7 +37,6 @@ def load_model(model_id: str, language: str, revision: str = "main", adapter: st
     model.generation_config.language = language
     model.generation_config.task = "transcribe"
     model.generation_config.forced_decoder_ids = None
-    model.generation_config.suppress_tokens = model.config.suppress_tokens
     return model, processor
 
 

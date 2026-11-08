@@ -24,6 +24,9 @@ dev = ["pytest>=8,<10", "ruff>=0.12", "build>=1.2", "nbformat>=5.10"]
 [project.urls]
 Repository = "https://github.com/jorgeutd/asr-finetuning-lab"
 
+[project.scripts]
+asr-lab = "asr_lab.cli:main"
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/asr_lab"]
 

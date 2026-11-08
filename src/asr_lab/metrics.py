@@ -21,13 +21,16 @@ def score(references: list[str], hypotheses: list[str]) -> dict:
     if any(not r for r in refs):
         raise ValueError("a reference is empty after normalization")
     words = jiwer.process_words(refs, hyps)
+    characters = jiwer.process_characters(refs, hyps)
     return {
         "wer": words.wer,
-        "cer": jiwer.cer(refs, hyps),
+        "cer": characters.cer,
         "substitutions": words.substitutions,
         "deletions": words.deletions,
         "insertions": words.insertions,
         "reference_words": words.hits + words.substitutions + words.deletions,
+        "character_errors": characters.substitutions + characters.deletions + characters.insertions,
+        "reference_characters": characters.hits + characters.substitutions + characters.deletions,
         "normalizer": NORMALIZER,
     }
 
@@ -39,8 +42,11 @@ def paired_wer_interval(
     groups: list[str] | None = None,
     resamples: int = 1000,
     seed: int = 42,
+    metric: str = "wer",
 ) -> list[float]:
-    """95% percentile interval for candidate WER minus baseline WER."""
+    """95% paired percentile interval; WER by default, CER when requested."""
+    if metric not in {"wer", "cer"}:
+        raise ValueError("metric must be wer or cer")
     if len(candidate) != len(references) or len(baseline) != len(references):
         raise ValueError("unaligned predictions")
     groups = groups or [str(i) for i in range(len(references))]
@@ -53,11 +59,14 @@ def paired_wer_interval(
         refs = [references[j] for j in indices]
         a = score(refs, [baseline[j] for j in indices])
         b = score(refs, [candidate[j] for j in indices])
-        totals[i] = [
-            a["reference_words"],
-            sum(a[k] for k in ("substitutions", "deletions", "insertions")),
-            sum(b[k] for k in ("substitutions", "deletions", "insertions")),
-        ]
+        if metric == "wer":
+            totals[i] = [
+                a["reference_words"],
+                sum(a[k] for k in ("substitutions", "deletions", "insertions")),
+                sum(b[k] for k in ("substitutions", "deletions", "insertions")),
+            ]
+        else:
+            totals[i] = [a["reference_characters"], a["character_errors"], b["character_errors"]]
     samples = np.random.default_rng(seed).integers(0, len(unique), (resamples, len(unique)))
     sums = totals[samples].sum(axis=1)
     return np.quantile((sums[:, 2] - sums[:, 1]) / sums[:, 0], [0.025, 0.975]).tolist()
