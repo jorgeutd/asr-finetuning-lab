@@ -1,0 +1,27 @@
+{
+  "dataset": "google/fleurs",
+  "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+  "config": "es_419",
+  "license": "CC-BY-4.0",
+  "source_url": "https://huggingface.co/datasets/google/fleurs",
+  "attribution": "Conneau et al. (2022), FLEURS, Google",
+  "selection": "First eligible clips per original split, in pinned dataset order.",
+  "speaker_note": "Speaker IDs unavailable; speaker isolation is not verified.",
+  "validation": {
+    "manifest_sha256": "7de8b0c2371d0f8eee6fe0fd67bfb1b5ee27604bf3cb777d5cc62c597c9491cf",
+    "rows": 16,
+    "splits": {
+      "train": 8,
+      "validation": 2,
+      "test": 6
+    },
+    "duration_seconds": 185.34,
+    "warnings": [
+      {
+        "id": "es_419-train-10026826401349149148",
+        "reason": "quiet or clipped audio; inspect labels"
+      }
+    ],
+    "speaker_ids_complete": false
+  }
+}
