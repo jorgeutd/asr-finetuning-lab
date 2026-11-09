@@ -1,0 +1,21 @@
+{
+  "language": "en",
+  "n": 64,
+  "baseline_wer": 0.13603988603988604,
+  "candidate_wer": 0.14031339031339032,
+  "wer_delta": 0.004273504273504286,
+  "wer_delta_ci95": [
+    -0.013831165041222343,
+    0.02150471743011828
+  ],
+  "baseline_cer": 0.059149722735674676,
+  "candidate_cer": 0.06346272335181762,
+  "cer_delta": 0.00431300061614294,
+  "cer_delta_ci95": [
+    -0.00390707026739039,
+    0.012819748785870869
+  ],
+  "decision": "inconclusive",
+  "bootstrap": "1000 paired group resamples, seed 42; speaker, else text ID, else clip",
+  "scope": "Selected clips only; one training seed. This is not a generalization claim."
+}

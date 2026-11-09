@@ -18,7 +18,7 @@ Training uses teacher forcing: the decoder receives the reference prefix. Infere
 
 ## Full training or LoRA
 
-Full fine-tuning updates all model weights. It offers more flexibility but needs gradients and optimizer state for every trainable parameter.
+Full fine-tuning updates the base model's trainable weights. It offers more flexibility but needs gradients and optimizer state for every trainable parameter. Whisper's fixed encoder positional embeddings remain frozen.
 
 LoRA freezes the base weights and learns a low-rank update:
 

@@ -19,5 +19,6 @@ An initial LoRA run failed while reloading its best checkpoint. The wrapper was 
 **Colab GPU experiments:** in progress.
 
 - **EN / LoRA**, 300 steps and 64 test clips: WER 13.60% → 35.68%; difference +22.08 points, 95% CI [+13.93, +31.13]. The supplied recipe regressed on these selected clips.
+- **EN / full**, same setup: WER 13.60% → 14.03%; difference +0.43 points, 95% CI [-1.38, +2.15]. Inconclusive.
 
-[Verified English evidence](colab-t4/en/). English full training and both Spanish runs are pending.
+[Verified English evidence](colab-t4/en/). Both Spanish runs are pending.
