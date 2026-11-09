@@ -1,0 +1,231 @@
+{
+  "dataset": "google/fleurs",
+  "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+  "config": "es_419",
+  "license": "CC-BY-4.0",
+  "source_url": "https://huggingface.co/datasets/google/fleurs",
+  "attribution": "Conneau et al. (2022), FLEURS, Google",
+  "selection": "First eligible clips per original split, in pinned dataset order.",
+  "speaker_note": "Speaker IDs unavailable; speaker isolation is not verified.",
+  "validation": {
+    "manifest_sha256": "63f506f4157c56d562dc62ecf5fec7efa418387209ec4d8071720d02415866f2",
+    "rows": 352,
+    "splits": {
+      "train": 256,
+      "validation": 32,
+      "test": 64
+    },
+    "duration_seconds": 3990.06,
+    "warnings": [
+      {
+        "id": "es_419-train-10026826401349149148",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10093871762731599422",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10095481861843051494",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10108901606699083616",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10169783839209670805",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-1021561597309617046",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10238863638029970460",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10245534950944914731",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10341048068611729813",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10359937089663681507",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10371395576197778490",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10390540682902123431",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10435965477375828393",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10451043181523807860",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10458128669085428184",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10484660559308411733",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10578564159043372165",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10602684967030962010",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10622610312327300504",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10639048909777133942",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10644191585041263742",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10731650144474740607",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10743395207853152277",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10744225573440730006",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10801672401180934406",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10818076705111241890",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10835761159719743418",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10881100802876676787",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10886513104117920077",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10906227365310563440",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-10935392345270939211",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-11012594903234402675",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-11033687871192238512",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-11066769362365667112",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-11116297202467914258",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-11214868597374330874",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-11215515007421328372",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-11237016323135067146",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-11237803575843499716",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-11252942611562134847",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-1126108778311489369",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-1127952628501946160",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-11315814080178963193",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-11373471105348625559",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-11405076411688810286",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-1140590036071849912",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-11481929294982648142",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-11522170620210044838",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-11548864859803654086",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-11568707460631654150",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-11593657152834264078",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "es_419-train-11595041366549878214",
+        "reason": "quiet or clipped audio; inspect labels"
+      }
+    ],
+    "speaker_ids_complete": false
+  }
+}
