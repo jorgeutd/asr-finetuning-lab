@@ -1,0 +1,15 @@
+{
+  "method": "full",
+  "language": "es",
+  "steps": 300,
+  "train_rows": 256,
+  "validation_rows": 32,
+  "trainable_parameters": 37184640,
+  "total_parameters": 37760640,
+  "elapsed_seconds": 436.04670032900003,
+  "training_loss": 1.0569715785980225,
+  "best_validation_wer": 0.2684563758389262,
+  "peak_cuda_allocated_bytes": 838842880,
+  "device": "Tesla T4",
+  "test_used_for_selection": false
+}
