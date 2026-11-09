@@ -1,25 +1,41 @@
 # Measured runs
 
-**CPU smoke check:** Whisper-tiny; 12 optimizer steps per method;
-8 train / 2 validation / 6 test clips per language; seed 42; four CPU threads.
+**Colab / Tesla T4:** Whisper-tiny; 300 optimizer steps; seed 42;
+256 train / 32 validation / 64 test clips per language.
+Effective batch: 16. Best checkpoint selected by validation WER.
 
-These runs verify execution. They do not support a quality or production claim.
+No recipe demonstrated an improvement: three regressed and one was inconclusive on these subsets.
 
-- **EN / lora**: WER 12.10% → 15.32%; difference +3.23 points, 95% CI [+0.00, +6.84]. Inconclusive.
-- **EN / full**: WER 12.10% → 11.29%; difference -0.81 points, 95% CI [-2.00, +0.00]. Inconclusive.
-- **ES / lora**: WER 18.18% → 16.88%; difference -1.30 points, 95% CI [-2.93, +0.00]. Inconclusive.
-- **ES / full**: WER 18.18% → 18.18%; difference +0.00 points, 95% CI [+0.00, +0.00]. Inconclusive.
+![WER differences with paired 95% intervals](wer-change.svg)
 
-[Raw metrics, CER, predictions, recipes, and intervals](cpu-smoke/).
+## Held-out WER
 
-The model/dataset revisions and content fingerprints are saved with each run. Speaker IDs are unavailable; these convenience subsets are not representative. Intervals do not measure variation across training seeds.
+- **EN / lora**: 13.60% → 35.68%; difference +22.08 points, 95% CI [+13.93, +31.13]. Candidate higher on selected clips.
+- **EN / full**: 13.60% → 14.03%; difference +0.43 points, 95% CI [-1.38, +2.15]. Inconclusive.
+- **ES / lora**: 19.27% → 26.53%; difference +7.25 points, 95% CI [+4.40, +10.28]. Candidate higher on selected clips.
+- **ES / full**: 19.27% → 42.24%; difference +22.96 points, 95% CI [+5.40, +56.95]. Candidate higher on selected clips.
 
-An initial LoRA run failed while reloading its best checkpoint. The wrapper was corrected and a pretrained regression test added. Final evaluations preserve saved token-suppression settings.
+## Training cost
 
-**Colab GPU experiments:** in progress.
+- **EN / lora**: 5.63 minutes; 0.31 GiB peak CUDA allocation; 147,456 trainable parameters.
+- **EN / full**: 5.49 minutes; 0.78 GiB peak CUDA allocation; 37,184,640 trainable parameters.
+- **ES / lora**: 5.81 minutes; 0.35 GiB peak CUDA allocation; 147,456 trainable parameters.
+- **ES / full**: 7.27 minutes; 0.78 GiB peak CUDA allocation; 37,184,640 trainable parameters.
 
-- **EN / LoRA**, 300 steps and 64 test clips: WER 13.60% → 35.68%; difference +22.08 points, 95% CI [+13.93, +31.13]. The supplied recipe regressed on these selected clips.
-- **EN / full**, same setup: WER 13.60% → 14.03%; difference +0.43 points, 95% CI [-1.38, +2.15]. Inconclusive.
-- **ES / LoRA**, 300 steps and 64 test clips: WER 19.27% → 26.53%; difference +7.25 points, 95% CI [+4.40, +10.28]. The supplied recipe regressed on these selected clips.
+Times include validation and checkpoint saving. CUDA allocation is not total system memory.
 
-[English evidence](colab-t4/en/) · [Spanish evidence](colab-t4/es/). Spanish full training is pending.
+## Evidence and limits
+
+- [English artifacts](colab-t4/en/) · [Spanish artifacts](colab-t4/es/).
+- Artifacts include CER, per-clip predictions, paired intervals, recipes, source IDs, model/data revisions, and dependency versions.
+- FLEURS / CC BY 4.0, Conneau et al. (2022), Google. [Source](https://huggingface.co/datasets/google/fleurs).
+- These are convenience subsets with one training seed. Intervals resample text IDs because speaker IDs are unavailable; they do not measure seed variation or establish production quality.
+- Learning rates differ between methods. These results compare the supplied recipes; they do not establish a universally better training method.
+- Colab initially exposed an editable-import issue and an incompatible optional torchvision installation. Both notebook setup issues were fixed before training.
+- An overnight disconnect prevented verification and export of the first GPU attempt. [Partial record](colab-t4/interrupted-en.json). The completed experiment was rerun.
+
+## CPU execution checks
+
+[Four 12-step smoke runs](cpu-smoke/README.md) verify both methods in both languages. Their six-clip comparisons are inconclusive.
+
+Regenerate the chart from saved comparisons: `pip install -e ".[plot]"`, then `python scripts/plot_results.py`.

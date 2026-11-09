@@ -1,0 +1,152 @@
+{
+  "comparisons": [
+    {
+      "language": "en",
+      "n": 64,
+      "baseline_wer": 0.13603988603988604,
+      "candidate_wer": 0.35683760683760685,
+      "wer_delta": 0.2207977207977208,
+      "wer_delta_ci95": [
+        0.1393013740212409,
+        0.31130161515166077
+      ],
+      "baseline_cer": 0.059149722735674676,
+      "candidate_cer": 0.2693776956253851,
+      "cer_delta": 0.21022797288971043,
+      "cer_delta_ci95": [
+        0.12328704747426648,
+        0.30936413147444597
+      ],
+      "decision": "candidate higher on selected clips",
+      "bootstrap": "1000 paired group resamples, seed 42; speaker, else text ID, else clip",
+      "scope": "Selected clips only; one training seed. This is not a generalization claim.",
+      "method": "lora",
+      "training": {
+        "method": "lora",
+        "language": "en",
+        "steps": 300,
+        "train_rows": 256,
+        "validation_rows": 32,
+        "trainable_parameters": 147456,
+        "total_parameters": 37908096,
+        "elapsed_seconds": 337.52778986499993,
+        "training_loss": 0.42566793501377104,
+        "best_validation_wer": 0.32857142857142857,
+        "peak_cuda_allocated_bytes": 330242048,
+        "device": "Tesla T4",
+        "test_used_for_selection": false
+      }
+    },
+    {
+      "language": "en",
+      "n": 64,
+      "baseline_wer": 0.13603988603988604,
+      "candidate_wer": 0.14031339031339032,
+      "wer_delta": 0.004273504273504286,
+      "wer_delta_ci95": [
+        -0.013831165041222343,
+        0.02150471743011828
+      ],
+      "baseline_cer": 0.059149722735674676,
+      "candidate_cer": 0.06346272335181762,
+      "cer_delta": 0.00431300061614294,
+      "cer_delta_ci95": [
+        -0.00390707026739039,
+        0.012819748785870869
+      ],
+      "decision": "inconclusive",
+      "bootstrap": "1000 paired group resamples, seed 42; speaker, else text ID, else clip",
+      "scope": "Selected clips only; one training seed. This is not a generalization claim.",
+      "method": "full",
+      "training": {
+        "method": "full",
+        "language": "en",
+        "steps": 300,
+        "train_rows": 256,
+        "validation_rows": 32,
+        "trainable_parameters": 37184640,
+        "total_parameters": 37760640,
+        "elapsed_seconds": 329.51236191399994,
+        "training_loss": 0.5009217635790507,
+        "best_validation_wer": 0.12063492063492064,
+        "peak_cuda_allocated_bytes": 839519744,
+        "device": "Tesla T4",
+        "test_used_for_selection": false
+      }
+    },
+    {
+      "language": "es",
+      "n": 64,
+      "baseline_wer": 0.19274809160305342,
+      "candidate_wer": 0.2652671755725191,
+      "wer_delta": 0.07251908396946569,
+      "wer_delta_ci95": [
+        0.04395985777423321,
+        0.10275046416464219
+      ],
+      "baseline_cer": 0.05926498179008939,
+      "candidate_cer": 0.09027701136739874,
+      "cer_delta": 0.03101202957730935,
+      "cer_delta_ci95": [
+        0.02061717873867686,
+        0.04204235157527654
+      ],
+      "decision": "candidate higher on selected clips",
+      "bootstrap": "1000 paired group resamples, seed 42; speaker, else text ID, else clip",
+      "scope": "Selected clips only; one training seed. This is not a generalization claim.",
+      "method": "lora",
+      "training": {
+        "method": "lora",
+        "language": "es",
+        "steps": 300,
+        "train_rows": 256,
+        "validation_rows": 32,
+        "trainable_parameters": 147456,
+        "total_parameters": 37908096,
+        "elapsed_seconds": 348.44703866800023,
+        "training_loss": 1.1205834611256917,
+        "best_validation_wer": 0.2832214765100671,
+        "peak_cuda_allocated_bytes": 374025728,
+        "device": "Tesla T4",
+        "test_used_for_selection": false
+      }
+    },
+    {
+      "language": "es",
+      "n": 64,
+      "baseline_wer": 0.19274809160305342,
+      "candidate_wer": 0.4223918575063613,
+      "wer_delta": 0.2296437659033079,
+      "wer_delta_ci95": [
+        0.05400600903827702,
+        0.5694909020390712
+      ],
+      "baseline_cer": 0.05926498179008939,
+      "candidate_cer": 0.22094691535150646,
+      "cer_delta": 0.16168193356141708,
+      "cer_delta_ci95": [
+        0.06444621982587002,
+        0.31138124471547163
+      ],
+      "decision": "candidate higher on selected clips",
+      "bootstrap": "1000 paired group resamples, seed 42; speaker, else text ID, else clip",
+      "scope": "Selected clips only; one training seed. This is not a generalization claim.",
+      "method": "full",
+      "training": {
+        "method": "full",
+        "language": "es",
+        "steps": 300,
+        "train_rows": 256,
+        "validation_rows": 32,
+        "trainable_parameters": 37184640,
+        "total_parameters": 37760640,
+        "elapsed_seconds": 436.04670032900003,
+        "training_loss": 1.0569715785980225,
+        "best_validation_wer": 0.2684563758389262,
+        "peak_cuda_allocated_bytes": 838842880,
+        "device": "Tesla T4",
+        "test_used_for_selection": false
+      }
+    }
+  ]
+}

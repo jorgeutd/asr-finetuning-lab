@@ -39,6 +39,7 @@ notebooks/     Colab entry points; no duplicated training code
 data/demo/     small attributed public speech samples
 docs/          theory, data contract, experiment workflow
 results/       measured runs and their limitations
+scripts/       regenerate the published results chart
 tests/         data, metrics, training, checkpoint checks
 ```
 
