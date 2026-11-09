@@ -1,0 +1,21 @@
+{
+  "language": "en",
+  "n": 64,
+  "baseline_wer": 0.13603988603988604,
+  "candidate_wer": 0.35683760683760685,
+  "wer_delta": 0.2207977207977208,
+  "wer_delta_ci95": [
+    0.1393013740212409,
+    0.31130161515166077
+  ],
+  "baseline_cer": 0.059149722735674676,
+  "candidate_cer": 0.2693776956253851,
+  "cer_delta": 0.21022797288971043,
+  "cer_delta_ci95": [
+    0.12328704747426648,
+    0.30936413147444597
+  ],
+  "decision": "candidate higher on selected clips",
+  "bootstrap": "1000 paired group resamples, seed 42; speaker, else text ID, else clip",
+  "scope": "Selected clips only; one training seed. This is not a generalization claim."
+}

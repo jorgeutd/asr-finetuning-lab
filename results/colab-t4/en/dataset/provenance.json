@@ -1,0 +1,331 @@
+{
+  "dataset": "google/fleurs",
+  "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+  "config": "en_us",
+  "license": "CC-BY-4.0",
+  "source_url": "https://huggingface.co/datasets/google/fleurs",
+  "attribution": "Conneau et al. (2022), FLEURS, Google",
+  "selection": "First eligible clips per original split, in pinned dataset order.",
+  "speaker_note": "Speaker IDs unavailable; speaker isolation is not verified.",
+  "validation": {
+    "manifest_sha256": "e4d45f143d0b9cf417e699b98fcf399b7daf11d2dc9724720b161167af944ba1",
+    "rows": 352,
+    "splits": {
+      "train": 256,
+      "validation": 32,
+      "test": 64
+    },
+    "duration_seconds": 3499.5,
+    "warnings": [
+      {
+        "id": "en_us-test-10167324587744183095",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-10197164397713068203",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-10233995782544396174",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-10323357556845456822",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-10335587906469246566",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-1036771894648013441",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-1038214857203833067",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-10383288285905292158",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-10405958125670257178",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-10411016628242228511",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-1045619486290403122",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-1046653381869710616",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-10481451226514948764",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-10492135991603561867",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-10492761258488775721",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-1054805305879816018",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-10622204403793540766",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-10751756685109361684",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-10849792007407044602",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-10894616243452123700",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-10899527843662463911",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-10933070083389897676",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-10938576782105608041",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-10969774925516121312",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-11060294228176938598",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-1111475259790805601",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-11147918080606585533",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-1116140877447157610",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-11260391063812418810",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-11265842188315045636",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-11374239868879585530",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-11459777646810052940",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-1146643745158029931",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-11483786862560523973",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-11497310594035767755",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-11504385604540375365",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-11525263464519603482",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-1153104690713813269",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-11536232800365538941",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-11554335886429174193",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-11559094331412401332",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-11593450817032542587",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-11596505942268625598",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-test-11617272550749387741",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-train-10041973057502883658",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-train-10136337203146620824",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-train-101878894705622706",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-train-10210365752259899340",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-train-10748999742577892097",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-train-10846523236188941302",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-train-11264744228266850110",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-train-11385510572874556731",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-train-11416582075105069690",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-train-11529505759785061714",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-train-11671331212882544488",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10035998729701048400",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10098964113747380446",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10146705666908229607",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10238777279729691182",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10290896634244679159",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10312254140358477897",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10354232920158081925",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10408474834696432538",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10416083819753348102",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10567709020684252271",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10597813815011301513",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10603285326592464876",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10606824155904794190",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10630374883688952860",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10749355711908235873",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10765076284259209003",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10805693277239677928",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10835833846156512763",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10846227846460802233",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10885549230041454053",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-10927605878527486298",
+        "reason": "quiet or clipped audio; inspect labels"
+      },
+      {
+        "id": "en_us-validation-11030046932175288954",
+        "reason": "quiet or clipped audio; inspect labels"
+      }
+    ],
+    "speaker_ids_complete": false
+  }
+}

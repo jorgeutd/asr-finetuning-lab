@@ -1,0 +1,15 @@
+{
+  "method": "lora",
+  "language": "en",
+  "steps": 300,
+  "train_rows": 256,
+  "validation_rows": 32,
+  "trainable_parameters": 147456,
+  "total_parameters": 37908096,
+  "elapsed_seconds": 337.52778986499993,
+  "training_loss": 0.42566793501377104,
+  "best_validation_wer": 0.32857142857142857,
+  "peak_cuda_allocated_bytes": 330242048,
+  "device": "Tesla T4",
+  "test_used_for_selection": false
+}

@@ -1,0 +1,21 @@
+{
+  "python": "3.13.16",
+  "cuda": "12.8",
+  "cudnn": 91002,
+  "device": "Tesla T4",
+  "packages": {
+    "torch": "2.9.1",
+    "transformers": "4.57.6",
+    "peft": "0.18.1",
+    "accelerate": "1.15.0",
+    "datasets": "4.8.5",
+    "huggingface-hub": "0.36.2",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0",
+    "numpy": "2.4.6",
+    "scipy": "1.16.3",
+    "soundfile": "0.13.1",
+    "PyYAML": "6.0.3",
+    "jiwer": "4.0.0"
+  }
+}

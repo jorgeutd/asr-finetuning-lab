@@ -16,4 +16,8 @@ The model/dataset revisions and content fingerprints are saved with each run. Sp
 
 An initial LoRA run failed while reloading its best checkpoint. The wrapper was corrected and a pretrained regression test added. Final evaluations preserve saved token-suppression settings.
 
-**Colab GPU experiments:** pending execution. No GPU quality results are claimed here.
+**Colab GPU experiments:** in progress.
+
+- **EN / LoRA**, 300 steps and 64 test clips: WER 13.60% → 35.68%; difference +22.08 points, 95% CI [+13.93, +31.13]. The supplied recipe regressed on these selected clips.
+
+[Verified English evidence](colab-t4/en/). English full training and both Spanish runs are pending.

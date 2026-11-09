@@ -12,6 +12,8 @@ asr-lab evaluate --model openai/whisper-tiny --language en --manifest data/local
 
 The dataset and model revisions are recorded. Reuse the recorded revisions for a strict rerun. Do not change the manifest between baseline and candidate evaluation.
 
+Seeds fix the experiment configuration; GPU training is not guaranteed to be bit-for-bit identical across runs or hardware.
+
 ## 2. Train
 
 ```bash
