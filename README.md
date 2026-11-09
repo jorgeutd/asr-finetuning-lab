@@ -16,12 +16,12 @@ flowchart LR
 
 ## Start
 
-Python 3.11–3.12 recommended. Install PyTorch for your hardware first if needed.
+Python 3.11–3.13 tested. Install PyTorch for your hardware first if needed.
 
 ```bash
 python -m pip install -e ".[train]"
 asr-lab validate data/demo/en/manifest.jsonl
-asr-lab train --config recipes/en-lora.yaml --manifest data/demo/en/manifest.jsonl --output runs/en-lora
+asr-lab train --config recipes/en-lora.yaml --manifest data/demo/en/manifest.jsonl --output runs/en-lora --max-steps 2
 ```
 
 Use the bundled data to verify the pipeline. Use the larger [experiment workflow](docs/experiments.md) to evaluate quality.

@@ -40,6 +40,8 @@ asr-lab train --config recipes/en-lora.yaml --manifest data/local/en/manifest.js
 
 Resume requires the original recipe and data fingerprint. In Colab, optionally persist the run directory to your own Drive before training. Colab runtimes are temporary and GPU availability is not guaranteed. No paid services or uploads are enabled by default.
 
+For short sessions, select one entry in the notebook's `METHODS` list and download its evidence before running the other method. A disconnected runtime may lose all local checkpoints.
+
 For GPU memory errors, lower `batch_size` and increase gradient accumulation to preserve the effective batch. Change the model in a copied recipe to `openai/whisper-base` or `openai/whisper-small` only after checking memory. Re-baseline that model.
 
 ## Transcribe a clip
